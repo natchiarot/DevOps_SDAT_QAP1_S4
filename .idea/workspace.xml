@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0301cf5-2f41-47ec-8c2f-cebb6c817a68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/keyin/SuggestionEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/keyin/SuggestionsDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/keyin/SuggestionEngineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/keyin/SuggestionEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/keyin/SuggestionEngineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2h69cE6pKCW0vKZaJR1J7z0DoQq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,6 +34,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.SuggestionEngineTest.executor": "Debug",
+    "JUnit.SuggestionEngineTest.testExceptionThrown.executor": "Debug",
+    "JUnit.SuggestionEngineTest.testGenerateSuggestionsFail.executor": "Debug",
+    "JUnit.SuggestionEngineTest.testNumberOfSuggestions.executor": "Debug",
+    "JUnit.SuggestionEngineTest.testSuggestionLength.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -59,6 +59,96 @@
       <recent name="com.keyin" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.SuggestionEngineTest">
+    <configuration name="SuggestionEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOps_SDAT_QAP1_S4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.keyin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.keyin" />
+      <option name="MAIN_CLASS_NAME" value="com.keyin.SuggestionEngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuggestionEngineTest.testExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOps_SDAT_QAP1_S4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.keyin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.keyin" />
+      <option name="MAIN_CLASS_NAME" value="com.keyin.SuggestionEngineTest" />
+      <option name="METHOD_NAME" value="testExceptionThrown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuggestionEngineTest.testGenerateSuggestionsFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOps_SDAT_QAP1_S4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.keyin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.keyin" />
+      <option name="MAIN_CLASS_NAME" value="com.keyin.SuggestionEngineTest" />
+      <option name="METHOD_NAME" value="testGenerateSuggestionsFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuggestionEngineTest.testNumberOfSuggestions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOps_SDAT_QAP1_S4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.keyin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.keyin" />
+      <option name="MAIN_CLASS_NAME" value="com.keyin.SuggestionEngineTest" />
+      <option name="METHOD_NAME" value="testNumberOfSuggestions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuggestionEngineTest.testSuggestionLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOps_SDAT_QAP1_S4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.keyin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.keyin" />
+      <option name="MAIN_CLASS_NAME" value="com.keyin.SuggestionEngineTest" />
+      <option name="METHOD_NAME" value="testSuggestionLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SuggestionEngineTest" />
+        <item itemvalue="JUnit.SuggestionEngineTest.testExceptionThrown" />
+        <item itemvalue="JUnit.SuggestionEngineTest.testNumberOfSuggestions" />
+        <item itemvalue="JUnit.SuggestionEngineTest.testGenerateSuggestionsFail" />
+        <item itemvalue="JUnit.SuggestionEngineTest.testSuggestionLength" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,5 +159,10 @@
       <updated>1716903739213</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DevOps_SDAT_QAP1_S4$SuggestionEngineTest_testNumberOfSuggestions.ic" NAME="SuggestionEngineTest.testNumberOfSuggestions Coverage Results" MODIFIED="1717022218705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.keyin.*</FILTER>
+    </SUITE>
   </component>
 </project>
