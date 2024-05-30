@@ -101,6 +101,5 @@ public class SuggestionEngine {
         suggestionEngine.loadDictionaryData(Paths.get( ClassLoader.getSystemResource("words.txt").getPath()));
 
         System.out.println(suggestionEngine.generateSuggestions(args[0]));
-        
     }
 }
