@@ -10,8 +10,6 @@ import java.nio.file.Paths;
 public class SuggestionEngineTest {
     private SuggestionEngine suggestionEngine = new SuggestionEngine();
 
-    private boolean testInstanceSame = false;
-
     @Test
     public void testNumberOfSuggestions() throws Exception {
         suggestionEngine.loadDictionaryData( Paths.get( ClassLoader.getSystemResource("words.txt").getPath()));
