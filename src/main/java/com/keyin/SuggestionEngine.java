@@ -54,39 +54,39 @@ public class SuggestionEngine {
      * @param word the word to find correction suggestions for
      * @return a String of words delimited by '\n' or an empty string if word is correct
      */
-    public String generateSuggestions(String word) {
-        if (getWordSuggestionDB().containsKey(word)) {
-            return "";
-        }
-
-        Stream<String> e1 = known(wordEdits(word));
-        Stream<String> e2 = known(wordEdits(word).map( (w2)-> wordEdits(w2) ).flatMap((x)->x));
-
-        Stream<String> suggestions = Stream.concat(e1, e2);
-
-        Map<String, Long> collectedSuggestions = suggestions
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
-        return  collectedSuggestions.keySet().stream()
-                .sorted(Comparator
-                        .comparing(collectedSuggestions::get)
-                        .reversed()
-                        .thenComparing(Collator.getInstance()))
-                .limit(10) // limit to top 10 suggestions to keep list consumable
-                .collect(Collectors.joining("\n"));
-    }
-
-    public Map<String, Integer> getWordSuggestionDB() {
-        if (wordSuggestionDB == null) {
-            wordSuggestionDB = new SuggestionsDatabase();
-        }
-
-        return wordSuggestionDB.getWordMap();
-    }
-
-    public void setWordSuggestionDB(SuggestionsDatabase wordSuggestionDB) {
-        this.wordSuggestionDB = wordSuggestionDB;
-    }
+//    public String generateSuggestions(String word) {
+//        if (getWordSuggestionDB().containsKey(word)) {
+//            return "";
+//        }
+//
+//        Stream<String> e1 = known(wordEdits(word));
+//        Stream<String> e2 = known(wordEdits(word).map( (w2)-> wordEdits(w2) ).flatMap((x)->x));
+//
+//        Stream<String> suggestions = Stream.concat(e1, e2);
+//
+//        Map<String, Long> collectedSuggestions = suggestions
+//                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+//
+//        return  collectedSuggestions.keySet().stream()
+//                .sorted(Comparator
+//                        .comparing(collectedSuggestions::get)
+//                        .reversed()
+//                        .thenComparing(Collator.getInstance()))
+//                .limit(10) // limit to top 10 suggestions to keep list consumable
+//                .collect(Collectors.joining("\n"));
+//    }
+//
+//    public Map<String, Integer> getWordSuggestionDB() {
+//        if (wordSuggestionDB == null) {
+//            wordSuggestionDB = new SuggestionsDatabase();
+//        }
+//
+//        return wordSuggestionDB.getWordMap();
+//    }
+//
+//    public void setWordSuggestionDB(SuggestionsDatabase wordSuggestionDB) {
+//        this.wordSuggestionDB = wordSuggestionDB;
+//    }
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
